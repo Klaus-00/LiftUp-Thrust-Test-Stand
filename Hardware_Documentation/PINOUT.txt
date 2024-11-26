@@ -1,0 +1,92 @@
+# Pinout for Thrust Test Stand
+
+## General Notes:
+- The ESC is controlled via the Signal pin and shares the Ground with the Arduino.
+- All Ground connections (GND) must be linked for proper operation.
+- Load cells are connected via HX711 amplifiers with corresponding Data (DT) and Clock (SCK) pins.
+
+---
+
+## Version 1: Basic Motor Control
+- ESC Signal: Pin 11
+- ESC Ground: Connected to Arduino GND
+
+---
+
+## Version 2: Adding a Single Load Cell for Thrust Measurement
+- ESC Signal: Pin 11
+- Load Cell Signal (DT): Pin 6
+- Load Cell Clock (SCK): Pin 7
+- ESC Ground: Connected to Arduino GND
+
+---
+
+## Version 3: Adding Torque Calculation with Two Load Cells
+- ESC Signal: Pin 11
+- Load Cell Left (DT): Pin 3
+- Load Cell Left (SCK): Pin 2
+- Load Cell Right (DT): Pin 4
+- Load Cell Right (SCK): Pin 5
+- ESC Ground: Connected to Arduino GND
+
+---
+
+## Version 4: Adding Button Control for Arm/Disarm and Double Click for Test
+- ESC Signal: Pin 11
+- Load Cell Left (DT): Pin 3
+- Load Cell Left (SCK): Pin 2
+- Load Cell Right (DT): Pin 4
+- Load Cell Right (SCK): Pin 5
+- Button: Pin 12
+- LED Armed: Pin 8
+- LED Safe: Pin 10
+- ESC Ground: Connected to Arduino GND
+
+---
+
+## Version 5: Definitive Version Without Current and Voltage Measurement
+- ESC Signal: Pin 11
+- Load Cell Left (DT): Pin 3
+- Load Cell Left (SCK): Pin 2
+- Load Cell Right (DT): Pin 4
+- Load Cell Right (SCK): Pin 5
+- Load Cell Thrust (DT): Pin 6
+- Load Cell Thrust (SCK): Pin 7
+- Button: Pin 12
+- LED Armed: Pin 8
+- LED Safe: Pin 10
+- ESC Ground: Connected to Arduino GND
+
+---
+
+## Version 6: Non-Functional Version With Analog Current and Voltage Measurement
+- ESC Signal: Pin 11
+- Load Cell Left (DT): Pin 3
+- Load Cell Left (SCK): Pin 2
+- Load Cell Right (DT): Pin 4
+- Load Cell Right (SCK): Pin 5
+- Load Cell Thrust (DT): Pin 6
+- Load Cell Thrust (SCK): Pin 7
+- Button: Pin 12
+- LED Armed: Pin 8
+- LED Safe: Pin 10
+- Analog Current: A3
+- Analog Voltage: A1
+- ESC Ground: Connected to Arduino GND
+
+---
+
+## Version 6.1: Work in Progress With INA219 for Current and Voltage Measurement
+- ESC Signal: Pin 11
+- Load Cell Left (DT): Pin 3
+- Load Cell Left (SCK): Pin 2
+- Load Cell Right (DT): Pin 4
+- Load Cell Right (SCK): Pin 5
+- Load Cell Thrust (DT): Pin 6
+- Load Cell Thrust (SCK): Pin 7
+- Button: Pin 12
+- LED Armed: Pin 8
+- LED Safe: Pin 10
+- INA219 SDA: A4
+- INA219 SCL: A5
+- ESC Ground: Connected to Arduino GND
