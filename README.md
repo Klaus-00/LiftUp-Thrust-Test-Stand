@@ -1,5 +1,3 @@
-# liftup
-
 # **Thrust Test Stand for Project LiftUp**
 
 ## **General Overview**
