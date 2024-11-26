@@ -1,5 +1,7 @@
 # **Thrust Test Stand for Project LiftUp**
 
+![LiftUp Logo](./logo_liftup.png)
+
 ## **General Overview**
 
 The **Thrust Test Stand** is a precision measurement device designed for testing and evaluating motors and propellers used in aerial vehicles. Developed as part of the **LiftUp Project** at the **University of Padova**, this stand allows researchers and students to gather critical performance data such as thrust and torque, enabling optimization of propulsion systems. 
